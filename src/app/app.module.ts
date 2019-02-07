@@ -9,10 +9,22 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+//For swipe cards
+import { HttpModule } from '@angular/http';
+import { SwingModule } from 'angular2-swing';
+///For swipe cards
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    //For swipe cards
+    HttpModule,
+    SwingModule
+    ///For swipe cards
+  ],
   providers: [
     StatusBar,
     SplashScreen,
@@ -20,4 +32,4 @@ import { AppComponent } from './app.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

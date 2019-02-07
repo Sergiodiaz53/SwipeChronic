@@ -1,5 +1,7 @@
 {
   "name": "SwipePain",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
